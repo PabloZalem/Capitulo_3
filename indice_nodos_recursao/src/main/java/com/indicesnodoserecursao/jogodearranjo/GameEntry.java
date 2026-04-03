@@ -1,4 +1,4 @@
-package com.indicesnodoserecursao;
+package com.indicesnodoserecursao.jogodearranjo;
 
 public class GameEntry {
     private String name;
@@ -19,9 +19,6 @@ public class GameEntry {
 
     @Override
     public String toString() {
-        return "GameEntry{" +
-                "name='" + name + '\'' +
-                ", score=" + score +
-                '}';
+        return "Nome: " + name + ", Score: " + score;
     }
 }
