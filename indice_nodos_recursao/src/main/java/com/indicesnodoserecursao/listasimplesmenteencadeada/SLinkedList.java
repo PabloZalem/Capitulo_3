@@ -29,4 +29,14 @@ public class SLinkedList {
         tail = value;
         size++;
     }
+
+    public void deleteInsertionFirst() {
+        if(head == null){
+            throw new RuntimeException("Lista Vazia");
+        }
+        tail = head;
+        head = head.getNext();
+        tail.setNext(null);
+        size--;
+    }
 }
