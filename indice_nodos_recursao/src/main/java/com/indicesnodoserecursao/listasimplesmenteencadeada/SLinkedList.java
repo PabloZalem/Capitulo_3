@@ -36,6 +36,14 @@ public class SLinkedList {
         tail.setNext(null);
         size--;
     }
+
+    public Node getHead() {
+        return head;
+    }
+
+    public Node getTail() {
+        return tail;
+    }
 }
 
 /* 
