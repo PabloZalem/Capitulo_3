@@ -37,3 +37,25 @@ public class SLinkedList {
         size--;
     }
 }
+
+/* 
+    Algoritmo addFirst(v):
+        v.setNext(head); -> O novo nó "v" vai apontar para o antigo primeiro nó da lista
+        head = v; -> O novo primeiro elemento da lista é "v"
+        size = size + 1;
+    
+    Algoritmo addLast(v):
+        v.setNext(null); -> Prepara o ultimo nó
+        tail.setNext(v); -> Conecta no final
+        tail = v; -> atualiza o fim da lista
+        size = size + 1;
+    
+    Algoritmo removeFirst():
+        se(size = 0):
+            lanca excecao(lista vazia);
+        
+        tail = head; -> 
+        head = head.getNext();
+        tail.setNext(null);
+        size = size - 1;
+*/
